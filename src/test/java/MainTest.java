@@ -18,16 +18,29 @@ public class MainTest {
         Configuration.startMaximized = true;
         LoginPage.authorisation(this.phoneNumber, this.password, this.url);
     }
+    public void pageElementsToArray(){
+        String[] links = new String[6];
+        links[0] = "https://portal.demo.its-profit.ru/lk/start_parking";
+        links[1] = "https://portal.demo.its-profit.ru/lk/parkings";
+        links[2] = "https://portal.demo.its-profit.ru/lk/replenishment";
+        links[3] = "https://portal.demo.its-profit.ru/lk/abonement";
+        links[4] = "https://portal.demo.its-profit.ru/lk/profile";
+        links[5] = "https://portal.demo.its-profit.ru/lk/cars";
+    }
+    @AfterClass
+    public void checkLinksArray(){
+
+    }
 
 
-    //public static class MainPageTest{
-        //@Test
-        //void FindZoneCheck() { PagerClass.MainPage.findZone();}
+
+    /*public static class MainPageTest{
+        @Test
+        void FindZoneCheck() { PagerClass.MainPage.findZone();}
         @Test
         void beginParkingCheck(){
             MainPage.beginParking();
-        }
-
+        }*/
 
 }
 

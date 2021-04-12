@@ -57,4 +57,5 @@ public class Profile {
         Selenide.$(By.cssSelector("body > div.footer > div > div > div.col-md-5.copyright.text-md-right.text-center")).shouldHave(Condition.exactText("Copyright © 2009-2021, ПАО \"МегаФон\""));
         Selenide.$(By.cssSelector("body > div.container.layout.smallpage > header > div > div.col-md-4.col-8.contact-center.d-flex.justify-content-center.align-items-center.flex-column > a")).shouldBe(Condition.visible);
     }
+
 }
